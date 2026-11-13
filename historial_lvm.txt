@@ -1,0 +1,197 @@
+    1  ls -l
+    2  pwd
+    3  tree
+    4  sudo apt update
+    5  sudo apt install tree
+    6  tree
+    7  ls -l
+    8  mkdir clase4
+    9  ls -l
+   10  cd clase4
+   11  mkdir practica
+   12  ls -l
+   13  tree
+   14  touch practica1.txt
+   15  rm practica1.txt
+   16  ls -l
+   17  cd practica
+   18  ls -l
+   19  pwd
+   20  mkdir practica1.txt
+   21  ls -l
+   22  rm practica1.txt
+   23  ls -l
+   24  rm practica1.txt
+   25  touch practica1.txt
+   26  ls -l
+   27  pwd
+   28  cp practica1.txt practica2.txt
+   29  ls -l
+   30  rm -r practica1.txt
+   31  ls -l
+   32  touch practica1.txt
+   33  ls -l
+   34  cp practica1.txt practica2.txt
+   35  ls -l
+   36  rm practica1.txt
+   37  ls -l
+   38  mv practica2.txt /home/vagrant/clase4/
+   39  ls -l
+   40  cd ..
+   41  ls -l
+   42  tree
+   43  rmdir practica/
+   44  ls -l
+   45  mkdir facturas pedidos
+   46  tree
+   47  mkdir -p clientes/{facturas,pedidos}
+   48  tree
+   49  mkdir -p {clientes,proveedores}/{facturas,pedidos}
+   50  tree
+   51  mkdir -p contactos/{clientes,proveedores}/{facturas,pedidos}
+   52  tree
+   53  mkdir -p Marquez/contactos/{clientes,proveedores}/{facturas,pedidos}
+   54  tree
+   55  mkdir -p Marquez/{mama/hijo{1..3},papa/{hijo{1..3},ahijado}}
+   56  tree
+   57  exit
+   58  sudo apt update
+   59  sudo apt install ansible -y
+   60  sudo apt list --installed
+   61  sudo apt list --installed | grep ansible
+   62  git --version
+   63  ansible --version
+   64  ls -la
+   65  cd .ssh
+   66  ls -l
+   67  ssh-keygen -t ed25519
+   68  ls -l
+   69  cat authorized_keys
+   70  cat id_ed25519.pub
+   71  cat id_ed25519.pub >>authorizes_keys
+   72  cat authorized_keys
+   73  cat id_ed25519.pub >>authorizes_keys
+   74  cat authorized_keys
+   75  exit
+   76  sudo apt update
+   77  sudo apt install ansible -y
+   78  sudo apt list --installed
+   79  sudo apt list --installed | grep ansible
+   80  git --version
+   81  ansible --version
+   82  ls la
+   83  ls -la
+   84  cd .ssh
+   85  ls -l
+   86  cat authorized_keys
+   87  cat id_ed22519.pub
+   88  cat 
+   89  sudo apt update
+   90  sudo apt install ansible -y
+   91  sudo apt list --installed
+   92  sudo apt list --installed | grep ansible
+   93  git --version
+   94  ansible --version
+   95  ls -la
+   96  cd .ssh
+   97  ls -l
+   98  cat authorized_keys
+   99  cat id_ed25519.pub
+  100  cat id_ed25519.pub >>authorized_keys
+  101  cat authorized_keys
+  102  ip -a
+  103  ip addres
+  104  hostname -l
+  105  hostname -i
+  106  curl ifconfig.me
+  107  cd ..
+  108  w
+  109  history
+  110  exit
+  111  ssh vagrant@192.168.56.2
+  112  w
+  113  ls -l
+  114  cd repogit
+  115  ls -l
+  116  cd  UTN-FRA_SO_onBording
+  117  ls -l
+  118  cd ..
+  119  ls -l
+  120  git clone https://github.com/upszot/UTN-FRA_SO_Ansible.git
+  121  ls -l
+  122  cd UTN-FRA_SO_Ansible
+  123  ls -l
+  124  cd ejemplo_01
+  125  ls -l
+  126  cat inventory
+  127  cat playbook.yml
+  128  cat README.md
+  129  ansible-playbook -i inventory playbook.yml
+  130  cd ..
+  131  cd ejemplo_02
+  132  ls -l
+  133  cat inventory
+  134  cat playbook.yml
+  135  ls -l
+  136  cat README.md
+  137  cd files
+  138  ls -l
+  139  cat index.html
+  140  cd ..
+  141  ansible-playbook -i inventory playbook.yml
+  142  cat /var/www/html/index.html
+  143  ls -l /var/www/html/
+  144  sudo apt list --installed | grep apache
+  145  cat playbook.yml
+  146  cd ..
+  147  cd ejemplo_03
+  148  ls -l
+  149  cat README.md
+  150  ls -l
+  151  cd role_ejemplo1/
+  152  ls -l
+  153  cd tests/
+  154  ls -l
+  155  cat inventory
+  156  cat test.yml
+  157  cd ..
+  158  cd tasks/
+  159  ls -l
+  160  cat main.yml
+  161  exit
+  162  lsblk
+  163  exit
+  164  lsblk
+  165  cd ~
+  166  git clone https://github.com/eliasmar942-cmyk/TP2_Marquez_Elias.git
+  167  sudo fdisk /dev/sdd
+  168  sudo fdisk /dev/sdc
+  169  sudo fdisk /dev/sdd
+  170  free -h
+  171  sudo mkswap /dev/sdd1
+  172  sudo swapon /dev/sdd1
+  173  free -h
+  174  swapon -s
+  175  cat /proc/swaps
+  176  sudo wipefs -a /dev/sdd2 /dev/sdd3 /dev/sdd5 /dev/sdd6 /dev/sdc1 /dev/sdc2
+  177  sudo pvcreate /dev/sdd2 /dev/sdd3 /dev/sdd5 /dev/sdd6 /dev/sdc1 /dev/sdc2
+  178  sudo pvs
+  179  sudo vgcreate vg_datos /dev/sdc1 /dev/sdd2
+  180  sudo vgs
+  181  sudo pvs
+  182  sudo vgcreate vg_web /dev/sdc2
+  183  sudo pvs
+  184  sudo lvcreate -L 1G vg_web -n lv_web1
+  185  sudo lvcreate -L 512M vg_web -n lv_web2
+  186  sudo lvcreate -L 512M vg_web -n lv_web3
+  187  sudo lvs
+  188  sudo pvs
+  189  sudo fdisk -l
+  190  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web1
+  191  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web2
+  192  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web3
+  193  cd ~/TP2_Marquez_Elias
+  194  sudo pvs > pvs.txt
+  195  sudo vgs > vgs.txt
+  196  sudo lvs > lvs.txt
+  197  history > historial_lvm.txt
